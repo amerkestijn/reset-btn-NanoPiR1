@@ -46,7 +46,7 @@ int main(int argc, char **argv)
                 if (msec >= 3000) {
                     sync();
                     syslog(LOG_NOTICE, "Notice placed correctly");
-                    system("shutdown -P now");
+                    system("shutdown -h now");
                     return 0;
                 }
             }
